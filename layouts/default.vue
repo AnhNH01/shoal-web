@@ -27,7 +27,7 @@
 
         <ul class="flex">
           <li class="cursor-pointer">
-            <NuxtLink to="/auth/login">
+            <NuxtLink to="/messaging">
               <Icon
                 name="i-heroicons:chat-bubble-oval-left-solid"
                 size="2em"

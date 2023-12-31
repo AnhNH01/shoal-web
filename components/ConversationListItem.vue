@@ -2,14 +2,13 @@
   <UCard
     class="cursor-pointer"
     :class="{
-      'bg-green-300' : active
+      'bg-gray-200' : active
     }"
     :ui="{
       body: {
         padding: 'p-1 sm:p-2'
       },
-      rounded: 'rounded-none',
-      base: 'border border-collapse'
+      rounded: 'rounded-lg',
     }"
     @click.prevent="onClickConvo"
   >

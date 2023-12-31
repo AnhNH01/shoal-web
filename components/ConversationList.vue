@@ -1,5 +1,13 @@
 <template>
-  <div class="flex bg-gray-200 flex-col w-80 max-w-sm h-full overflow-y-auto ">
+  <div class="flex flex-col space-y-2 w-80 max-w-sm h-full p-1 overflow-y-auto">
+    <UInput
+      icon="i-heroicons-magnifying-glass-20-solid"
+      size="lg"
+      color="white"
+      :trailing="false"
+      placeholder="Search..."
+    />
+
     <ConversationListItem
       v-for="convo in listConversation"
       :key="convo.conversationId"
