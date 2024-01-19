@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="relative flex flex-col min-h-screen">
     <header class="border-b -mb-px sticky top-0 z-50 border-gray-200 h-16">
       <div
-        class="mx-auto px-4 sm:py-1 lg:py-2 sm:px-6 lg:px-8 max-w-7xl flex items-center gap-3"
+        class="container"
       >
-        <UInput
+        <!-- <UInput
           v-model="searchString"
           name="q"
           size="lg"
@@ -23,9 +23,9 @@
               @click="searchString = ''"
             />
           </template>
-        </UInput>
+        </UInput> -->
 
-        <ul class="flex">
+        <!-- <ul class="flex">
           <li class="cursor-pointer">
             <NuxtLink to="/messaging">
               <Icon
@@ -40,10 +40,10 @@
               <Icon name="i-heroicons:home-20-solid" size="2em" color="gray" />
             </NuxtLink>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </header>
-    <main>
+    <main class="flex-1">
       <UContainer>
         <slot />
       </UContainer>
